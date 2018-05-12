@@ -20,6 +20,7 @@ int main(){
 	bind(serversocket,(SOCKADDR*)&ser_addr,len);
 	printf("begin bind\n")	;
 	listen(serversocket,10);
+	printf("listning.....");
         sockaddr_in cli_addr;
 	SOCKET clientsocket ;
 	char buffer[bfsize];
